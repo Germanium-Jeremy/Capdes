@@ -1,18 +1,13 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
 import AppNavigator from './navigation/AppNavigator';
+import Design from './screens/components/Design';
+import { Image } from 'react-native';
 
 export default function App() {
   return (
-      <AppNavigator />
+    <>
+    {/* <Image source={require('./assets/Design.png')} className={`w-[40px] h-[40px] fixed top-[20px] right-0 z-10`} /> */}
+    <AppNavigator />
+    {/* <Design /> */}
+    </>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
